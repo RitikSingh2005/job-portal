@@ -48,6 +48,7 @@ Frontend- React	Tailwind CSS
 Backend- Supabase	
 Database-	Clerk
 Build Tool- vite,vscode
+
 	
 # 📁 Project Structure
 
@@ -104,9 +105,9 @@ job-portal
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+```
 
-
-# ⚙️ Installation & Setup
+# Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/hired-job-portal.git
 cd hired-job-portal
@@ -128,6 +129,7 @@ Role is assigned (recruiter / candidate)
 JWT token is passed to Supabase
 
 Supabase RLS policies restrict data access securely
+
 
 # 📸 Screenshots
 
