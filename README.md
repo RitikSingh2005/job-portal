@@ -134,6 +134,7 @@ Supabase RLS policies restrict data access securely
 # 📸 Screenshots
 
 ![Landing Page](./public/banner.jpeg)
+![Landing Page](./public/banner.jpeg)
 
 
 # 👨‍💻 Author
