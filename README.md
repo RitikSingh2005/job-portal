@@ -133,7 +133,9 @@ Supabase RLS policies restrict data access securely
 
 # 📸 Screenshots
 
-![Landing Page]([./public/banner.jpeg](https://github.com/RitikSingh2005/job-portal/blob/main/Screenshot%202026-02-19%20114005.png))
+
+![Image Alt]](https://github.com/RitikSingh2005/job-portal/blob/main/Screenshot%202026-02-19%20114005.png)
+
 ![Landing Page](./public/banner.jpeg)
 
 
