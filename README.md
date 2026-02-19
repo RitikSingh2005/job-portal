@@ -1,16 +1,140 @@
-# React + Vite
+# 🚀 Hired – Job Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack job portal built with React + Vite, designed to connect recruiters and job seekers seamlessly.
 
-Currently, two official plugins are available:
+Hired allows recruiters to post jobs and manage applications, while candidates can explore, save, and apply to jobs easily.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 📌 Features
+## 👨‍💼 For Job Seekers
 
-## React Compiler
+Browse available jobs
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Filter by location & company
 
-## Expanding the ESLint configuration
+View detailed job descriptions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Save jobs for later
+
+Apply to jobs
+
+Track applied jobs
+
+## 🏢 For Recruiters
+
+Create company profile
+
+Post new job listings
+
+Manage posted jobs
+
+View applications received
+
+Track applicants
+
+# 🔐 Authentication & Security
+
+Secure authentication (Clerk)
+
+Role-based routing (Recruiter / Candidate)
+
+Protected routes
+
+JWT-based session handling
+
+Supabase Row Level Security (RLS)
+
+# 🛠️ Tech Stack
+Frontend- React	Tailwind CSS			
+Backend- Supabase	
+Database-	Clerk
+Build Tool- vite,vscode
+	
+# 📁 Project Structure
+
+```bash
+job-portal
+│
+├── public/
+│   ├── companies/
+│   ├── banner.jpeg
+│   ├── logo.png
+│   ├── logo-dark.png
+│   ├── logo-new.png
+│   └── vite.svg
+│
+├── src/
+│   ├── api/
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── AddCompanyDrawer.jsx
+│   │   ├── ApplicationCard.jsx
+│   │   ├── ApplyJob.jsx
+│   │   ├── CreatedApplications.jsx
+│   │   ├── CreatedJobs.jsx
+│   │   ├── JobCard.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   ├── header.jsx
+│   │   └── theme-provider.jsx
+│   │
+│   ├── data/
+│   ├── hooks/
+│   ├── layouts/
+│   ├── lib/
+│   ├── pages/
+│   │   ├── JobListing.jsx
+│   │   ├── JobPage.jsx
+│   │   ├── LandingPage.jsx
+│   │   ├── MyJobs.jsx
+│   │   ├── OnBoarding.jsx
+│   │   ├── PostJob.jsx
+│   │   └── SavedJob.jsx
+│   │
+│   ├── utils/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   └── index.css
+│
+├── .gitignore
+├── components.json
+├── eslint.config.js
+├── index.html
+├── jsconfig.json
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+
+
+# ⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/hired-job-portal.git
+cd hired-job-portal
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Setup Environment Variables
+
+4️⃣ Run the Development Server
+npm run dev
+
+# 🔑 Authentication Flow
+
+Users sign in using Clerk
+
+Role is assigned (recruiter / candidate)
+
+JWT token is passed to Supabase
+
+Supabase RLS policies restrict data access securely
+
+# 📸 Screenshots
+
+![Landing Page](./public/banner.jpeg)
+
+
+# 👨‍💻 Author
+
+Ritik Singh
+B.Tech Computer Science
