@@ -46,7 +46,9 @@ Supabase Row Level Security (RLS)
 # 🛠️ Tech Stack
 Frontend- React	Tailwind CSS			
 Backend- Supabase	
+
 Database-	Clerk
+
 Build Tool- vite,vscode
 
 	
