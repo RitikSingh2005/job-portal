@@ -109,8 +109,6 @@ job-portal
 
 # Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/hired-job-portal.git
-cd hired-job-portal
 
 2️⃣ Install Dependencies
 npm install
