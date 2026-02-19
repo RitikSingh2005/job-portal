@@ -1,28 +1,22 @@
 import { useUser } from "@clerk/clerk-react";
+import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
 
 const ProtectedRoute = ({ children }) => {
   const { isSignedIn, user, isLoaded } = useUser();
-  const location = useLocation();
+  const { pathname } = useLocation();
 
-  // 🔹 Wait for Clerk to load completely
-  if (!isLoaded) {
-    return <div>Loading...</div>;
+  if (isLoaded && !isSignedIn && isSignedIn !== undefined) {
+    return <Navigate to="/?sign-in=true" />;
   }
 
-  // 🔹 If not signed in → go to landing page
-  if (!isSignedIn) {
-    return <Navigate to="/?sign-in=true" replace />;
-  }
-
-  // 🔹 If signed in but no role → force onboarding
+  // check onboarding status
   if (
-    isSignedIn &&
+    user !== undefined &&
     !user?.unsafeMetadata?.role &&
-    location.pathname !== "/onboarding"
-  ) {
-    return <Navigate to="/onboarding" replace />;
-  }
+    pathname !== "/onboarding"
+  )
+    return <Navigate to="/onboarding" />;
 
   return children;
 };
