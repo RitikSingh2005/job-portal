@@ -143,4 +143,3 @@ Supabase RLS policies restrict data access securely
 
 Ritik Singh
 
-B.Tech Computer Science
