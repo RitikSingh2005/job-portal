@@ -122,13 +122,13 @@ npm run dev
 
 # 🔑 Authentication Flow
 
-Users sign in using Clerk
+Users sign in using Clerk.
 
-Role is assigned (recruiter / candidate)
+Role is assigned (recruiter / candidate).
 
-JWT token is passed to Supabase
+JWT token is passed to Supabase.
 
-Supabase RLS policies restrict data access securely
+Supabase RLS policies restrict data access securely.
 
 
 # 📸 Screenshots
